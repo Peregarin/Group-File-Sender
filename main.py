@@ -9,8 +9,8 @@ logger = logging.getLogger(__name__)
 
 # Получаем настройки из переменных окружения (Bothost)
 BOT_TOKEN = os.getenv("BOT_TOKEN")
-SOURCE_CHAT_ID = os.getenv("SOURCE_CHAT_ID")  # Группа 1 (откуда берем)
-DEST_CHAT_ID = os.getenv("DEST_CHAT_ID")      # Группа 2 (куда кидаем)
+SOURCE_CHAT_ID = -76935771164039 # Группа 1 (откуда берем)
+DEST_CHAT_ID = -73576057572743 # Группа 2 (куда кидаем)
 
 # Проверка: если забыли вписать токен или ID в Bothost, бот сразу скажет об ошибке
 if not all([BOT_TOKEN, SOURCE_CHAT_ID, DEST_CHAT_ID]):
